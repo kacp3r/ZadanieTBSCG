@@ -29,6 +29,7 @@ public class RegionSelectionPO extends BasePO {
     //Actions
     public void clickIndiaEnglishRegion() {
         logger.trace("Will attempt to click on India English region button");
+        //wait.until(ExpectedConditions.stalenessOf(selectIndiaEnglishButton));
         Actions action = new Actions(driver);
         action.moveToElement(selectIndiaEnglishButton).perform();
         selectIndiaEnglishButton.click();
@@ -37,6 +38,7 @@ public class RegionSelectionPO extends BasePO {
 
     public void clickEuropeGermanRegion() {
         logger.trace("Will attempt to click on Europe German region button");
+        //wait.until(ExpectedConditions.stalenessOf(selectEuropeGermanButton));
         Actions action = new Actions(driver);
         action.moveToElement(selectEuropeGermanButton).perform();
         selectEuropeGermanButton.click();
